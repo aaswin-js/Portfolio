@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="JS Aaswin - Portfolio showcasing projects, experience, and technical skills from college journey">
+    <meta name="author" content="JS Aaswin">
+    <title>JS Aaswin | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">JS</span>
+                <span class="logo-accent">Aaswin</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun" id="theme-icon"></i>
+            </button>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-split">
+
+            <!-- Left Panel -->
+            <div class="hero-left animate-fade-in">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hero-name-line">JS</span>
+                    <span class="hero-name-line accent-line">Aaswin</span>
+                </h1>
+
+                <div class="hero-role-wrapper">
+                    <span class="role-prefix">&gt;&nbsp;</span>
+                    <span class="hero-typed-role" id="typed-role"></span><span class="role-cursor">_</span>
+                </div>
+
+                <p class="hero-description">
+                    Passionate developer crafting innovative solutions through code.
+                    Exploring the intersection of technology and creativity.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/aaswin-js" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/js-aaswin-565063361/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Hackathons</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Code Terminal -->
+            <div class="hero-right">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="t-dot t-red"></span>
+                            <span class="t-dot t-yellow"></span>
+                            <span class="t-dot t-green"></span>
+                        </div>
+                        <span class="terminal-title">aaswin.js</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-line"><span class="t-comment">// Loading developer profile...</span></div>
+                        <div class="terminal-line t-hidden" id="tl-1"><span class="t-keyword">const</span> <span
+                                class="t-var">developer</span> <span class="t-op">=</span> <span
+                                class="t-brace">{</span></div>
+                        <div class="terminal-line t-hidden" id="tl-2">&nbsp;&nbsp;<span class="t-key">name</span><span
+                                class="t-op">:</span> <span class="t-string">"JS Aaswin"</span><span
+                                class="t-op">,</span></div>
+                        <div class="terminal-line t-hidden" id="tl-3">&nbsp;&nbsp;<span class="t-key">role</span><span
+                                class="t-op">:</span> <span class="t-string">"Full Stack Developer"</span><span
+                                class="t-op">,</span></div>
+                        <div class="terminal-line t-hidden" id="tl-4">&nbsp;&nbsp;<span class="t-key">skills</span><span
+                                class="t-op">:</span> <span class="t-brace">[</span></div>
+                        <div class="terminal-line t-hidden" id="tl-5">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="t-string">"React"</span><span class="t-op">,</span> <span
+                                class="t-string">"Node.js"</span><span class="t-op">,</span></div>
+                        <div class="terminal-line t-hidden" id="tl-6">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="t-string">"Python"</span><span class="t-op">,</span> <span
+                                class="t-string">"AI/ML"</span></div>
+                        <div class="terminal-line t-hidden" id="tl-7">&nbsp;&nbsp;<span class="t-brace">]</span><span
+                                class="t-op">,</span></div>
+                        <div class="terminal-line t-hidden" id="tl-8">&nbsp;&nbsp;<span
+                                class="t-key">passion</span><span class="t-op">:</span> <span class="t-string">"Building
+                                cool stuff"</span><span class="t-op">,</span></div>
+                        <div class="terminal-line t-hidden" id="tl-9">&nbsp;&nbsp;<span
+                                class="t-key">available</span><span class="t-op">:</span> <span
+                                class="t-bool">true</span></div>
+                        <div class="terminal-line t-hidden" id="tl-10"><span class="t-brace">}</span><span
+                                class="t-op">;</span></div>
+                        <div class="terminal-line t-hidden" id="tl-11">&nbsp;</div>
+                        <div class="terminal-line t-hidden" id="tl-12"><span class="t-comment">// Output</span></div>
+                        <div class="terminal-line t-hidden" id="tl-13"><span class="t-fn">console</span><span
+                                class="t-op">.</span><span class="t-fn">log</span><span class="t-brace">(</span><span
+                                class="t-var">developer</span><span class="t-brace">)</span><span class="t-op">;</span>
+                        </div>
+                        <div class="terminal-line t-hidden" id="tl-14"><span class="t-output">✓ Ready to
+                                collaborate!</span></div>
+                        <div class="terminal-prompt t-hidden" id="tl-15"><span class="t-prompt">$</span> <span
+                                class="t-cursor-blink">▋</span></div>
+                    </div>
+                </div>
+
+                <!-- Floating tech pills -->
+                <div class="tech-pills">
+                    <div class="tech-pill pill-1"><i class="fab fa-react"></i> React</div>
+                    <div class="tech-pill pill-2"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="tech-pill pill-3"><i class="fab fa-python"></i> Python</div>
+                    <div class="tech-pill pill-4"><i class="fas fa-database"></i> MongoDB</div>
+                    <div class="tech-pill pill-5"><i class="fab fa-js"></i> JavaScript</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Highly motivated and detail-oriented professional with a passion for creating innovative
+                        and user-friendly solutions. Skilled in efficient code, and collaborating with cross-functional
+                        teams to deliver high-quality results. Eager to apply technical expertise and problem-solving
+                        skills in a dynamic environment.
+                    </p>
+                    <p class="about-paragraph">
+                        Winner of Inter-College Hackathon 2024, Smart India Hackathon at Assam 2023, and SRITI-ATHAN
+                        held at Erode Sengunthar Engineering College 2023. I'm passionate about applying academic
+                        knowledge to real-world industry scenarios and continuously learning new technologies.
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-border"></div>
+                        <img src="aaswin.jpg" alt="JS Aaswin" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                Experience
+            </h2>
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Learnlike</div>
+                        <h3 class="timeline-title">Web Development Intern</h3>
+                        <p class="timeline-description">
+                            • Contributed to the design, development, and deployment of Learnlike's live
+                            applications<br>
+                            • Worked with HTML, CSS, JavaScript, and MySQL for frontend and backend tasks<br>
+                            • Collaborated on API integration using Postman and managed project codebases with Git and
+                            GitHub<br>
+                            • Demonstrated strong interpersonal skills and a proactive learning attitude during the
+                            internship
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Full Stack Development</span>
+                            <span class="tag">Agile Methodology</span>
+                            <span class="tag">Code Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3 class="timeline-title">Technical Skills Enhancement</h3>
+                        <p class="timeline-description">
+                            Completed various online courses and certifications to expand my technical expertise.
+                            Focused on advanced programming concepts, cloud technologies, and modern development
+                            practices.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Self Learning</span>
+                            <span class="tag">Certifications</span>
+                            <span class="tag">Best Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <!-- <span class="title-number">02.</span> -->
+                Featured Projects
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-project="hydrocraft" style="cursor: pointer;">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/aaswin-js/HydroCraftAI-SIH" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-water"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">HydroCraftAI</h3>
+                            <!-- <span class="project-type">AI Application</span> -->
+                        </div>
+                        <p class="project-description">
+                            Revolutionizing hydroelectric projects with AI! Optimize turbine designs, assess
+                            environmental impact, and create sustainable solutions for run-of-river, reservoir, and
+                            pumped storage plants. 🚀💡🌿
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Sustainability</span>
+                            <span class="tech-tag">Hydroelectric</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-project="task-management" style="cursor: pointer;">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/aaswin-js" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Task Management System</h3>
+                            <!-- <span class="project-type">Full Stack</span> -->
+                        </div>
+                        <p class="project-description">
+                            A comprehensive task management platform with user authentication,
+                            real-time updates, and collaborative features for team productivity.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-project="ecommerce" style="cursor: pointer;">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/aaswin-js" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <!-- <span class="project-type">Web Application</span> -->
+                        </div>
+                        <p class="project-description">
+                            A modern e-commerce solution with shopping cart functionality,
+                            payment integration, and responsive design for seamless shopping experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Payment Gateway</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Tech Stack & Skills
+            </h2>
+
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cog"></i>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-npm"></i>
+                            <span>NPM</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title">
+                <!-- <span class="title-number">04.</span> -->
+                Achievements & Awards
+            </h2>
+
+            <div class="achievements-timeline">
+                <!-- Achievement Step 1 -->
+                <div class="achievement-step">
+                    <div class="step-number">
+                        <span>01</span>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-content" onclick="toggleAchievement(this)">
+                        <div class="step-header">
+                            <div class="step-header-left">
+                                <div class="step-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="step-header-text">
+                                    <h3 class="step-title">Inter-College Hackathon</h3>
+                                    <p class="step-year">2024 • Winner 🏆</p>
+                                </div>
+                            </div>
+                            <div class="step-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="step-details">
+                            <ul class="step-points">
+                                <li>Won first place competing against talented teams from multiple colleges</li>
+                                <li>Developed an innovative solution with strong technical implementation</li>
+                                <li>Impressed judges with real-world applicability and scalability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement Step 2 -->
+                <div class="achievement-step">
+                    <div class="step-number">
+                        <span>02</span>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-content" onclick="toggleAchievement(this)">
+                        <div class="step-header">
+                            <div class="step-header-left">
+                                <div class="step-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="step-header-text">
+                                    <h3 class="step-title">Smart India Hackathon</h3>
+                                    <p class="step-year">2023 • Assam • Finalist 🥇</p>
+                                </div>
+                            </div>
+                            <div class="step-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="step-details">
+                            <ul class="step-points">
+                                <li>Secured victory at the prestigious national-level Smart India Hackathon</li>
+                                <li>Collaborated with team to create cutting-edge solutions</li>
+                                <li>Addressed real-world challenges faced by government and industry sectors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement Step 3 -->
+                <div class="achievement-step">
+                    <div class="step-number">
+                        <span>03</span>
+                    </div>
+                    <div class="step-connector last"></div>
+                    <div class="step-content" onclick="toggleAchievement(this)">
+                        <div class="step-header">
+                            <div class="step-header-left">
+                                <div class="step-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="step-header-text">
+                                    <h3 class="step-title">SKILLATHAN Hackathon</h3>
+                                    <p class="step-year">2023 • ESEC 🎖️</p>
+                                </div>
+                            </div>
+                            <div class="step-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="step-details">
+                            <ul class="step-points">
+                                <li>Emerged as winner at Erode Sengunthar Engineering College</li>
+                                <li>Demonstrated exceptional problem-solving skills under time constraints</li>
+                                <li>Showcased technical expertise in developing innovative solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Get In Touch
+            </h2>
+
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3 class="contact-heading">Let's Connect!</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new projects, creative ideas, or opportunities
+                        to be part of your vision. Feel free to reach out through any of the platforms below.
+                    </p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="https://github.com/aaswin-js" target="_blank" rel="noopener noreferrer"
+                        class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>GitHub</h4>
+                            <p>@aaswin-js</p>
+                        </div>
+                        <i class="fas fa-arrow-right contact-arrow"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/js-aaswin-565063361/" target="_blank" rel="noopener noreferrer"
+                        class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>LinkedIn</h4>
+                            <p>JS Aaswin</p>
+                        </div>
+                        <i class="fas fa-arrow-right contact-arrow"></i>
+                    </a>
+
+                    <a href="mailto:your.email@example.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                        <i class="fas fa-arrow-right contact-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <span id="modal-type" class="modal-project-type"></span>
+                <div id="modal-description" class="modal-description"></div>
+                <div class="modal-details">
+                    <h3>Key Features:</h3>
+                    <ul id="modal-features" class="modal-features-list"></ul>
+                </div>
+                <div class="modal-tech">
+                    <h3>Technologies Used:</h3>
+                    <div id="modal-tech-tags" class="modal-tech-tags"></div>
+                </div>
+                <div class="modal-links">
+                    <a id="modal-github" href="#" target="_blank" rel="noopener noreferrer" class="modal-btn">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                    <a id="modal-demo" href="#" target="_blank" rel="noopener noreferrer"
+                        class="modal-btn modal-btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <span class="gradient-text">JS Aaswin</span>
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/aaswin-js" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/js-aaswin-565063361/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copyright">
+                © 2026 JS Aaswin. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
